@@ -1,0 +1,17 @@
+export const tamanhos = [
+    { id: 1, tam: "30" },
+    { id: 2, tam: "31" },
+    { id: 3, tam: "32" },
+    { id: 4, tam: "33" },
+    { id: 5, tam: "34" },
+    { id: 6, tam: "35" },
+    { id: 7, tam: "36" },
+    { id: 8, tam: "37" },
+    { id: 9, tam: "38" },
+    { id: 10, tam: "39" },
+    { id: 11, tam: "40" },
+    { id: 12, tam: "41" },
+    { id: 13, tam: "42" },
+    { id: 14, tam: "43" },
+    { id: 15, tam: "44" },
+]

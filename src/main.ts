@@ -18,6 +18,7 @@ import CompRow from 'primevue/row';
 import CascadeSelect from 'primevue/cascadeselect';
 import InputNumber from 'primevue/inputnumber';
 import TextArea from 'primevue/textarea';
+import CompEditor from 'primevue/editor';
 
 import 'primevue/resources/themes/saga-blue/theme.css';
 import 'primevue/resources/primevue.min.css';
@@ -35,5 +36,6 @@ app.component('CompRow', CompRow);
 app.component('CascadeSelect', CascadeSelect);
 app.component('InputNumber', InputNumber);
 app.component('TextArea', TextArea);
+app.component('CompEditor', CompEditor);
 
 app.mount('#app');

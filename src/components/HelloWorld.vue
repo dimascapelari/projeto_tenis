@@ -116,9 +116,23 @@
             </p>
           </span>
 
-          <span class="p-float-label">
-            <p>
-              <InputText
+          <span class="editor-container">
+            <span class="p-float-label editor">
+              <CompEditor
+                placeholder="Descrição"
+                v-model="produto.desc"
+                editorStyle="height: 150px"
+              >
+                <template #toolbar>
+                  <!-- <span class="ql-formats">
+                  <button class="ql-bold"></button>
+                  <button class="ql-italic"></button>
+                  <button class="ql-underline"></button>
+                </span> -->
+                </template>
+              </CompEditor>
+              <!-- <p>
+              <CompEditor
                 placeholder="Descrição"
                 type="text"
                 v-model="produto.desc"
@@ -126,7 +140,8 @@
                 class="p-inputtextarea"
               />
               <label for="username">- Descrição</label>
-            </p>
+            </p> -->
+            </span>
           </span>
 
           <span class="p-float-label">
@@ -139,7 +154,7 @@
                 class="p-inputtextarea"
                 :autoResize="true"
                 rows="4"
-                cols="22"
+                cols="48"
               />
               <label for="username">- Detalhamento</label>
             </p>
@@ -492,5 +507,15 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.editor-container {
+  display: flex;
+  justify-content: center;
+}
+
+.editor {
+  width: 400px;
+  margin-bottom: 15px;
 }
 </style>

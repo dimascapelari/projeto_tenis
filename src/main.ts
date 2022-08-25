@@ -16,7 +16,8 @@ import CompColumn from 'primevue/column';
 import ColumnGroup from 'primevue/columngroup';     //optional for column grouping
 import CompRow from 'primevue/row';
 import CascadeSelect from 'primevue/cascadeselect';
-
+import InputNumber from 'primevue/inputnumber';
+import TextArea from 'primevue/textarea';
 
 import 'primevue/resources/themes/saga-blue/theme.css';
 import 'primevue/resources/primevue.min.css';
@@ -32,5 +33,7 @@ app.component('CompColumn', CompColumn);
 app.component('ColumnGroup', ColumnGroup);
 app.component('CompRow', CompRow);
 app.component('CascadeSelect', CascadeSelect);
+app.component('InputNumber', InputNumber);
+app.component('TextArea', TextArea);
 
 app.mount('#app');

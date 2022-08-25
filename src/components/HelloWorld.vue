@@ -131,12 +131,15 @@
 
           <span class="p-float-label">
             <p>
-              <InputText
+              <TextArea
                 placeholder="Digite um Detalhamento"
                 type="text"
                 v-model="produto.detalhe"
                 name="detalheProduto"
                 class="p-inputtextarea"
+                :autoResize="true"
+                rows="4"
+                cols="22"
               />
               <label for="username">- Detalhamento</label>
             </p>
@@ -176,7 +179,12 @@
       >
         <div class="variacoes-input-container">
           <label for="cores">Cores:</label>
-          <select name="cores" id="cores" v-model="variacao.cor">
+          <select
+            class="p-cascadeselect"
+            name="cores"
+            id="cores"
+            v-model="variacao.cor"
+          >
             <option v-for="cor in co" :key="cor.id" :value="cor.tipo">
               {{ cor.tipo }}
             </option>
@@ -184,7 +192,12 @@
         </div>
         <div class="variacoes-input-container">
           <label for="tamanho">Tamanho:</label>
-          <select name="descricao" id="tamanho" v-model="variacao.tamanho">
+          <select
+            class="p-cascadeselect"
+            name="descricao"
+            id="tamanho"
+            v-model="variacao.tamanho"
+          >
             <option
               v-for="tamanho in taman"
               :key="tamanho.id"
@@ -197,7 +210,7 @@
 
         <div class="variacoes-input-container">
           <label for="nome">Preço:</label>
-          <input
+          <InputNumber
             type="text"
             id="preco"
             name="preco"

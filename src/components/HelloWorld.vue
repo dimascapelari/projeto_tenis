@@ -10,7 +10,8 @@
       Não existem produtos cadastrados !
     </div>
 
-    <table class="table table-striped" v-show="produtos.length > 0">
+    <!-- <table class="table table-striped" v-show="produtos.length > 0"> -->
+    <DataTable class="table table-striped" v-show="produtos.length > 0">
       <thead>
         <tr>
           <th>id</th>
@@ -65,7 +66,7 @@
           </tr>
         </template>
       </tbody>
-    </table>
+    </DataTable>
 
     <CompButton class="p-button-raised p-button-rounded" @click="adicionar()"
       >Adicionar</CompButton

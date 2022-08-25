@@ -227,6 +227,9 @@
         <div class="variacoes-input-container">
           <label for="nome">Preço:</label>
           <InputNumber
+            mode="currency"
+            currency="BRL"
+            locale="pt-BR"
             type="text"
             id="preco"
             name="preco"

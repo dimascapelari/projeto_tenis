@@ -123,14 +123,15 @@
                 v-model="produto.desc"
                 editorStyle="height: 150px"
               >
-                <template #toolbar>
-                  <!-- <span class="ql-formats">
-                  <button class="ql-bold"></button>
-                  <button class="ql-italic"></button>
-                  <button class="ql-underline"></button>
-                </span> -->
-                </template>
+                <!-- <template #toolbar> -->
+                <!-- <span class="ql-formats">
+                    <button class="ql-bold"></button>
+                    <button class="ql-italic"></button>
+                    <button class="ql-underline"></button>
+                  </span> -->
+                <!-- </template> -->
               </CompEditor>
+
               <!-- <p>
               <CompEditor
                 placeholder="Descrição"
@@ -160,7 +161,7 @@
             </p>
           </span>
 
-          <div>
+          <div class="fabricante">
             <p>
               <label>Fabricante: </label>
               <select class="p-cascadeselect" v-model="produto.fabric">
@@ -507,6 +508,14 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.fabricante select {
+  width: 315px;
+}
+
+.p-float-label input {
+  width: 400px;
 }
 
 .editor-container {

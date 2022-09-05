@@ -1,7 +1,6 @@
 // import { createApp } from 'vue'
 // import App from './App.vue'
 // import router from './router'
-
 // createApp(App).use(router).mount('#app')
 
 
@@ -20,6 +19,7 @@ import InputNumber from 'primevue/inputnumber';
 import TextArea from 'primevue/textarea';
 import CompEditor from 'primevue/editor';
 import DropDown from 'primevue/dropdown';
+import CompCarousel from 'primevue/carousel';
 
 import 'primevue/resources/themes/saga-blue/theme.css';
 import 'primevue/resources/primevue.min.css';
@@ -39,5 +39,6 @@ app.component('InputNumber', InputNumber);
 app.component('TextArea', TextArea);
 app.component('CompEditor', CompEditor);
 app.component('DropDown', DropDown);
+app.component('CompCarousel', CompCarousel);
 
 app.mount('#app');
